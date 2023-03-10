@@ -4,9 +4,10 @@ export default [
     path: "/assets/profiles/akku.jpg",
     rating: "5.0",
     count: "10",
-    country: "India",
+    country: "online",
     desc: "Photography with Aakanksha",
     price: "100",
+    openSpots: 2,
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -34,6 +37,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -43,6 +47,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -52,6 +57,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -61,6 +67,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -70,6 +77,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -79,6 +87,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -88,6 +97,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -97,6 +107,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -106,6 +117,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -115,6 +127,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -124,6 +137,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -133,6 +147,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -142,6 +157,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 2,
@@ -151,6 +167,7 @@ export default [
     country: "India",
     desc: "Web Dev classes with Srinivas Mekala",
     price: "98",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -160,6 +177,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -169,6 +187,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -178,6 +197,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -187,6 +207,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -196,6 +217,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -205,6 +227,7 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
   {
     id: 3,
@@ -214,5 +237,6 @@ export default [
     country: "Kenya",
     desc: "Life Lessons with Akachi Mowaa",
     price: "120",
+    openSpots: 0,
   },
 ];

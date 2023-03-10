@@ -15,7 +15,8 @@ function App() {
     count={item.count} 
     country={item.country} 
     desc={item.desc} 
-    price={item.price} 
+    price={item.price}
+    openSpots={item.openSpots}
     />
   })
 

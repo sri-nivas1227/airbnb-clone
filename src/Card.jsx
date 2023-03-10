@@ -3,9 +3,17 @@ import star from "/assets/free_icon_1.svg"
 
 // import potrait from "../assets/akachi.jpg"
 const Card = (props) => {
-  console.log(props)
+  let badgeText
+  if(props.openSpots === 0){
+    badgeText = "SOLD OUT"
+  }
+  else if(props.country === 'online')
+  {
+    badgeText= "ONLINE"
+  }
   return (
-    <div id='card' className='m-3 rounded-lg inline-block w-1/3 '>
+    <div id='card' className='m-3 relative rounded-lg inline-block w-1/3 cursor-pointer '>
+      {badgeText!== null && <div className='absolute top-1 left-1   bg-slate-200 p-2 text-sm font-semibold rounded' id="badge">{badgeText}</div>}
       <div className="image">
         <img src={props.path} className=' rounded-lg' alt="sri" />
       </div>
