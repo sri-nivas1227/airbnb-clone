@@ -9,26 +9,26 @@ const Card = (props) => {
   if(openSpots === 0){
     badgeText = "SOLD OUT"
   }
-  else if(location === 'online')
+  else if(location.toLowerCase() === 'online')
   {
     badgeText= "ONLINE"
   }
   return (
     // After using Object Spread syntax
-    <div id='card' className='m-3 relative rounded-lg inline-block w-1/3 cursor-pointer '>
-      {badgeText!== null && <div className='absolute top-1 left-1  bg-slate-200 p-2 font-semibold rounded' id="badge">{badgeText}</div>}
+    <div id='card' className='w-1/3 m-3 bg-red-300 relative rounded-lg inline-block  cursor-pointer '>
+      {badgeText && <div className='absolute top-1 left-1  bg-slate-200 p-2 font-semibold rounded' id="badge">{badgeText}</div>}
       <div className="image">
-        <img src={path} className=' rounded-lg' alt="sri" />
+        <img src={path} className='rounded-lg' alt="sri" />
       </div>
-      <div className="details">
-        <div className="rating flex gap-1 my-1">
+      <div className="details whitespace-pre-line">
+        <div className="rating flex gap-1 m-1">
             <img src={star} alt="star" />
             <p id="rating">{rating}</p>
             <p id="count" className='text-gray-600'>({count}) &bull;</p>
             <p id="location" className='text-gray-600'>{location}</p>
         </div>
-        <div className="desc my-1">{desc}</div>
-        <div id="price" className='font-semibold my-1'>From ${price} / <span className='font-normal'>person</span></div>
+        <p className="w-fit desc m-1">{desc}</p>
+        <p id="price" className='font-semibold m-1'>From ${price} / <span className='font-normal'>person</span></p>
       </div>
     </div>
   )
