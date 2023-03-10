@@ -11,7 +11,9 @@ function App() {
     // This key property should be unique for every item in the dataset. 
     //When using an API you'll get IDs in the data, which are unique for every data object
     
-    item={item}
+    {...item}
+
+    // item={item} //Instead of passing the item as a new property we can do the above by object spreading
     /*    
     ** Instead of passing multiple properties, we can send the whole item and figure out how to use them in the component itself. Like the above
     * path={item.path}

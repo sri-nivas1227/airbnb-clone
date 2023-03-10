@@ -3,7 +3,8 @@ import star from "/assets/free_icon_1.svg"
 
 // import potrait from "../assets/akachi.jpg"
 const Card = (props) => {
-  let {path, rating, count, location, desc, price, openSpots}= props.item
+  let {path, rating, count, location, desc, price, openSpots}= props
+  // The above literally means that the props is itself an object with directly the properties which I can assign to my keys here directly
   let badgeText
   if(openSpots === 0){
     badgeText = "SOLD OUT"
@@ -13,6 +14,7 @@ const Card = (props) => {
     badgeText= "ONLINE"
   }
   return (
+    // After using Object Spread syntax
     <div id='card' className='m-3 relative rounded-lg inline-block w-1/3 cursor-pointer '>
       {badgeText!== null && <div className='absolute top-1 left-1  bg-slate-200 p-2 font-semibold rounded' id="badge">{badgeText}</div>}
       <div className="image">
