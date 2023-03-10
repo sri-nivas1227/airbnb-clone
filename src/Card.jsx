@@ -3,29 +3,30 @@ import star from "/assets/free_icon_1.svg"
 
 // import potrait from "../assets/akachi.jpg"
 const Card = (props) => {
+  let {path, rating, count, location, desc, price, openSpots}= props.item
   let badgeText
-  if(props.openSpots === 0){
+  if(openSpots === 0){
     badgeText = "SOLD OUT"
   }
-  else if(props.country === 'online')
+  else if(location === 'online')
   {
     badgeText= "ONLINE"
   }
   return (
     <div id='card' className='m-3 relative rounded-lg inline-block w-1/3 cursor-pointer '>
-      {badgeText!== null && <div className='absolute top-1 left-1   bg-slate-200 p-2 text-sm font-semibold rounded' id="badge">{badgeText}</div>}
+      {badgeText!== null && <div className='absolute top-1 left-1  bg-slate-200 p-2 font-semibold rounded' id="badge">{badgeText}</div>}
       <div className="image">
-        <img src={props.path} className=' rounded-lg' alt="sri" />
+        <img src={path} className=' rounded-lg' alt="sri" />
       </div>
       <div className="details">
         <div className="rating flex gap-1 my-1">
             <img src={star} alt="star" />
-            <p id="rating">{props.rating}</p>
-            <p id="count" className='text-gray-600'>({props.count}) &bull;</p>
-            <p id="country" className='text-gray-600'>{props.country}</p>
+            <p id="rating">{rating}</p>
+            <p id="count" className='text-gray-600'>({count}) &bull;</p>
+            <p id="location" className='text-gray-600'>{location}</p>
         </div>
-        <div className="desc my-1">{props.desc}</div>
-        <div id="price" className='font-semibold my-1'>From ${props.price} / <span className='font-normal'>person</span></div>
+        <div className="desc my-1">{desc}</div>
+        <div id="price" className='font-semibold my-1'>From ${price} / <span className='font-normal'>person</span></div>
       </div>
     </div>
   )
