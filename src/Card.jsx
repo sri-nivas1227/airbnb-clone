@@ -15,7 +15,7 @@ const Card = (props) => {
   }
   return (
     // After using Object Spread syntax
-    <div id='card' className='w-1/3 m-3 bg-red-300 relative rounded-lg inline-block  cursor-pointer '>
+    <div id='card' className='w-1/3 m-3 relative rounded-lg inline-block  cursor-pointer '>
       {badgeText && <div className='absolute top-1 left-1  bg-slate-200 p-2 font-semibold rounded' id="badge">{badgeText}</div>}
       <div className="image">
         <img src={path} className='rounded-lg' alt="sri" />
